@@ -42,3 +42,61 @@ Don't 100% rely on these numbers. I suggest to always buy 1 fuel more than the A
 
 The result is cached for 3600 seconds.
 
+## Market API
+
+An API with market information, such as the latest prices and volumes.
+
+### GET Location
+
+Endpoint to get latest market information of a location.
+
+`/locations/{location}/`
+
+**Example**
+
+```
+GET https://market.spacetraders.bahr.dev/locations/OM-PM/
+
+[
+    {
+        "symbol": "DRONES",
+        "volumePerUnit": 1,
+        "pricePerUnit": 29,
+        "spread": 1,
+        "purchasePricePerUnit": 30,
+        "sellPricePerUnit": 28,
+        "quantityAvailable": 35175
+    },
+    // ...
+]
+```
+
+**Caching**
+
+The result is cached for 10 seconds.
+
+### GET Location And Good
+
+Endpoint to get the latest market information of a good in a particular location.
+
+`/locations/{location}/good/{good}`
+
+**Example**
+
+```
+GET https://market.spacetraders.bahr.dev/locations/OM-PM/good/MACHINERY/
+
+{
+    "symbol": "MACHINERY",
+    "volumePerUnit": 2,
+    "pricePerUnit": 402,
+    "spread": 2,
+    "purchasePricePerUnit": 404,
+    "sellPricePerUnit": 400,
+    "quantityAvailable": 36950
+}
+```
+
+**Caching**
+
+The result is cached for 10 seconds.
