@@ -32,3 +32,7 @@ GET https://static.spacetraders.bahr.dev/route/OE-PM/OE-PM-TR/?shipType=EM-MK-I
 
 Don't 100% rely on these numbers. I suggest to always buy 1 fuel more than the API tells you to. Still refining it :)
 
+*Caching*
+
+The result is cached for 3600 seconds.
+
