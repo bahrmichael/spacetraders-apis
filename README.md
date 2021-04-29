@@ -9,7 +9,7 @@ URL: https://static.spacetraders.bahr.dev
 
 ### GET Route
 
-**Warning**: Currently only available for the system OE.
+**Warning**: Currently only available for the system OE. Also only shipTypes that cost less than 200k credits are considered.
 
 Endpoint to get information about a route. Use it with the Static API URL.
 
@@ -29,6 +29,10 @@ GET https://static.spacetraders.bahr.dev/route/OE-PM/OE-PM-TR/?shipType=EM-MK-I
     "shipType": "EM-MK-I"
 }
 ```
+
+**Error Codes**
+
+404: The route does not exist, or the API has no data for it yet.
 
 **Disclaimer**
 
