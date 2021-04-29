@@ -44,7 +44,11 @@ The result is cached for 3600 seconds.
 
 ## Market API
 
+**Warning**: Currently only available for the system OE.
+
 An API with market information, such as the latest prices and volumes.
+
+URL: https://market.spacetraders.bahr.dev
 
 ### GET Location
 
