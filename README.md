@@ -79,7 +79,7 @@ GET https://market.spacetraders.bahr.dev/locations/OM-PM/
 
 **Caching**
 
-The result is cached for 10 seconds.
+The result is cached for 30 seconds.
 
 ### GET Market for Good at Location
 
@@ -109,4 +109,4 @@ GET https://market.spacetraders.bahr.dev/locations/OM-PM/good/MACHINERY/
 
 **Caching**
 
-The result is cached for 10 seconds.
+The result is cached for 30 seconds.
