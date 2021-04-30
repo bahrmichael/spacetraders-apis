@@ -17,6 +17,8 @@ Endpoint to get information about a route. Use it with the Static API URL.
 
 This will yield the result with the higest fuel consumption. Use the optional query parameter `shipType` to get the result for a particular ship.
 
+If you omit the `shipType` the response will tell you which ship type has been used for the resulting fuel.
+
 **Example**
 
 ```
