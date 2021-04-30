@@ -48,7 +48,7 @@ An API with market information, such as the latest prices and volumes.
 
 URL: https://market.spacetraders.bahr.dev
 
-### GET Location
+### GET Market Location
 
 Endpoint to get latest market information of a location.
 
@@ -77,7 +77,7 @@ GET https://market.spacetraders.bahr.dev/locations/OM-PM/
 
 The result is cached for 10 seconds.
 
-### GET Location And Good
+### GET Market for Good at Location
 
 Endpoint to get the latest market information of a good in a particular location.
 
