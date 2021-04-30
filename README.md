@@ -9,7 +9,7 @@ URL: https://static.spacetraders.bahr.dev
 
 ### GET Route
 
-**Warning**: Currently only available for the system OE. Also only shipTypes that cost less than 200k credits are considered.
+**Warning**: Only shipTypes that cost less than 200k credits are considered. Numbers aren't always 100% accurate, so better by 1 more fuel than the API tells you to.
 
 Endpoint to get information about a route. Use it with the Static API URL.
 
@@ -32,11 +32,9 @@ GET https://static.spacetraders.bahr.dev/route/OE-PM/OE-PM-TR/?shipType=EM-MK-I
 
 **Error Codes**
 
+403: You're using the wrong path. This error code is not about permissions.
+
 404: The route does not exist, or the API has no data for it yet.
-
-**Disclaimer**
-
-Don't 100% rely on these numbers. I suggest to always buy 1 fuel more than the API tells you to. Still refining it :)
 
 **Caching**
 
@@ -73,6 +71,10 @@ GET https://market.spacetraders.bahr.dev/locations/OM-PM/
 ]
 ```
 
+**Error Codes**
+
+403: You're using the wrong path. This error code is not about permissions.
+
 **Caching**
 
 The result is cached for 10 seconds.
@@ -98,6 +100,10 @@ GET https://market.spacetraders.bahr.dev/locations/OM-PM/good/MACHINERY/
     "quantityAvailable": 36950
 }
 ```
+
+**Error Codes**
+
+403: You're using the wrong path. This error code is not about permissions.
 
 **Caching**
 
