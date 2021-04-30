@@ -1,4 +1,4 @@
-# Spacetraders APIs
+# Spacetraders Helper APIs
 A collection of helpful APIs for the game spacetraders.io
 
 ## Static API
