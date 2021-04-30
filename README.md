@@ -44,8 +44,6 @@ The result is cached for 3600 seconds.
 
 ## Market API
 
-**Warning**: Currently only available for the system OE.
-
 An API with market information, such as the latest prices and volumes.
 
 URL: https://market.spacetraders.bahr.dev
@@ -83,7 +81,7 @@ The result is cached for 10 seconds.
 
 Endpoint to get the latest market information of a good in a particular location.
 
-`/locations/{location}/good/{good}`
+`/locations/{location}/goods/{good}`
 
 **Example**
 
