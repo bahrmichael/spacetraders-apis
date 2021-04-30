@@ -40,7 +40,7 @@ Don't 100% rely on these numbers. I suggest to always buy 1 fuel more than the A
 
 **Caching**
 
-The result is cached for 3600 seconds.
+The result is cached for 3600 seconds. It's unlikely to change unless the game mechanics change.
 
 ## Market API
 
