@@ -114,3 +114,23 @@ GET https://market.spacetraders.bahr.dev/locations/OM-PM/good/MACHINERY/
 **Caching**
 
 The result is cached for 30 seconds.
+
+### GET Market Data History
+
+Coming Soon
+
+## Accountant API
+
+Coming Soon
+
+### POST Purchase Goods
+
+Coming Soon. Proxy for [purchase goods API](https://api.spacetraders.io/#api-purchase_orders-NewPurchaseOrder) with transaction recording.
+
+### POST Sell Goods
+
+Coming Soon. Proxy for [sell goods API](https://api.spacetraders.io/#api-sell_orders-NewSellOrder) with transaction recording.
+
+### Get Transactions
+
+Coming Soon. Lists the transactions that you performed through the Accountant API.
