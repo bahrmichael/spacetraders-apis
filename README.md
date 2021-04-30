@@ -50,6 +50,8 @@ URL: https://market.spacetraders.bahr.dev
 
 ### GET Market Location
 
+This returns pretty much the same information as [the original market API](https://api.spacetraders.io/#api-marketplace-marketplace).
+
 Endpoint to get latest market information of a location.
 
 `/locations/{location}/`
@@ -82,6 +84,8 @@ GET https://market.spacetraders.bahr.dev/locations/OM-PM/
 The result is cached for 30 seconds.
 
 ### GET Market for Good at Location
+
+This returns pretty much the same information as [the original market API](https://api.spacetraders.io/#api-marketplace-marketplace).
 
 Endpoint to get the latest market information of a good in a particular location.
 
