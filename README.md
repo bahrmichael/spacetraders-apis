@@ -1,5 +1,7 @@
 # Spacetraders Helper APIs
-A collection of helpful APIs for the game spacetraders.io
+A collection of helpful APIs for the game spacetraders.io.
+
+The reset of this API will be about 6h behind the game server's reset.
 
 ## Static API
 
