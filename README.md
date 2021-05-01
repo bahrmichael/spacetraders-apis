@@ -7,13 +7,38 @@ An API with static information, such as information about routes.
 
 URL: https://static.spacetraders.bahr.dev
 
-### GET Route
+### GET `/goods/{good}`
+
+**Warning**: Only goods that are available on the market will be present here.
+
+Endpoint to get information about a good. Use it with the Static API URL.
+
+**Example**
+
+```
+GET https://static.spacetraders.bahr.dev/good/MACHINERY/
+
+{
+    "volumePerUnit": 2,
+    "symbol": "MACHINERY"
+}
+```
+
+**Error Codes**
+
+403: You're using the wrong path. This error code is not about permissions.
+
+404: The good does not exist, or the API has no data for it yet.
+
+**Caching**
+
+The result is cached for 3600 seconds. It's unlikely to change unless the game mechanics change.
+
+### GET `/route/{origin}/{destination}/`
 
 **Warning**: Only shipTypes that cost less than 200k credits are considered. Numbers aren't always 100% accurate, so better by 1 more fuel than the API tells you to.
 
 Endpoint to get information about a route. Use it with the Static API URL.
-
-`/route/{origin}/{destination}/`
 
 This will yield the result with the higest fuel consumption. Use the optional query parameter `shipType` to get the result for a particular ship.
 
@@ -48,13 +73,11 @@ An API with market information, such as the latest prices and volumes.
 
 URL: https://market.spacetraders.bahr.dev
 
-### GET Market Location
+### GET `/locations/{location}/`
 
 This returns pretty much the same information as [the original market API](https://api.spacetraders.io/#api-marketplace-marketplace).
 
 Endpoint to get latest market information of a location.
-
-`/locations/{location}/`
 
 **Example**
 
@@ -83,13 +106,11 @@ GET https://market.spacetraders.bahr.dev/locations/OM-PM/
 
 The result is cached for 30 seconds.
 
-### GET Market for Good at Location
+### GET `/locations/{location}/goods/{good}/`
 
 This returns pretty much the same information as [the original market API](https://api.spacetraders.io/#api-marketplace-marketplace).
 
 Endpoint to get the latest market information of a good in a particular location.
-
-`/locations/{location}/goods/{good}`
 
 **Example**
 
