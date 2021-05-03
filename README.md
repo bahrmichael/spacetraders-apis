@@ -49,13 +49,17 @@ If you omit the `shipType` the response will tell you which ship type has been u
 **Example**
 
 ```
-GET https://static.spacetraders.bahr.dev/route/OE-PM/OE-PM-TR/?shipType=EM-MK-I
+GET https://static.spacetraders.bahr.dev/route/OE-UC-AD/OE-BO/?shipType=GR-MK-I
 
 {
-    "origin": "OE-PM",
-    "destination": "OE-PM-TR",
-    "fuel": 3,
-    "shipType": "EM-MK-I"
+    "origin": "OE-UC-AD",
+    "destination": "OE-BO",
+    "fuel": 46,
+    "shipType": "GR-MK-I",
+    // optional until data is properly populated
+    "duration": 418,
+    // optional until data is properly populated
+    "distance": 179
 }
 ```
 
